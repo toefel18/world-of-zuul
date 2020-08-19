@@ -1027,13 +1027,13 @@ public class Game {
 			// Determine file path.
 			File imageFile = new File(gameDataDir() + "/games/" + getWorldName() + "/images/" + imagefile);
 		    
-			if(!imageFile.exists())
-			{
-				imageFile = new File(gameDataDir() + "/images/" + imagefile);
-				
-				if(!imageFile.exists())
-					throw new Exception("Image '" + imagefile + "' not found.");
-			}
+//			if(!imageFile.exists())
+//			{
+//				imageFile = new File(gameDataDir() + "/games/" + getWorldName() + "/images/" + imagefile);
+//
+//				if(!imageFile.exists())
+//					throw new Exception("Image '" + imagefile + "' not found.");
+//			}
 			
 			imagePaths.put(imageFile.getPath(), imagefile);
 			
