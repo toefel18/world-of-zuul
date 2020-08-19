@@ -1,0 +1,1577 @@
+<?xml version="1.0" encoding="UTF-8"?><game language="en" playername="Klaasjanhuntelaar" version="0.1" world="Pokemon">
+	<rooms>
+		<room h="800" id="1" image="surfaces/grass.png" music="mainworld.mid" w="1200"/>
+		<room h="150" id="2" image="surfaces/laminaat.jpg" music="smrbows2.mid" w="200"/>
+		<room h="585" id="3" image="surfaces/grass2.png" music="pokemonopening.mid" w="750"/>
+		<room h="575" id="bush1" image="surfaces/grass2.png" music="pokemonopening.mid" w="790"/>
+		<room h="575" id="city1" image="surfaces/grass2.png" music="pokemonopening.mid" w="1600"/>
+ 	</rooms>
+	<roomobjects>
+		<player commandrange="10" h="42" id="player" image="organisms/player_2/" room="2" usecontrolset="1" velocity="1" w="34" walkimagefrequency="12" x="141" y="126">
+			<collisions>
+				<rectangle h="15" w="34" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="42" w="34" x="0" y="0"/>
+			</boundaries>
+			
+			<inventorys>
+			<!-- TEST DEFINITION OF INVENTORIES temporarytestname SHOULD BE REMOVED -->
+				<inventory maxcarryableweight="25" storetype="item" temporarytestname="itemlist">
+					<names>
+						<name lang="nl">Items NL</name>
+						<name lang="en">Items EN</name>
+					</names>
+				</inventory>
+				<inventory maxcarryableweight="5" storetype="pokemon" temporarytestname="pokemonlist">
+					<names>
+						<name lang="nl">Pokemon NL</name>
+						<name lang="en">Pokemon EN</name>
+					</names>
+				</inventory>
+			</inventorys>	
+		</player>
+		
+		<!--  Room 1 -->
+		<primitive h="232" id="restaurant" image="buildings/1.png" room="1" w="512" x="400" y="200">
+			<collisions>
+				<rectangle h="175" isboundary="true" w="350" x="0" y="58"/>
+				<rectangle h="60" isboundary="true" w="95" x="130" y="0"/>
+				<rectangle h="125" isboundary="true" w="160" x="354" y="90"/>
+			</collisions>
+		</primitive>
+	    <door direction="south" h="30" id="restaurantDoor" linkeddoor="7" newx="317" newy="190" room="1" w="30" x="317" y="190">
+	   		<useablecommands>
+				<command commandname="open" directlyexecute="true">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Restaurant binnengaan</name>
+						<name lang="en">Enter restaurant</name>
+					</names>
+				</command>
+			</useablecommands>
+	    </door>
+		<primitive h="144" id="2" image="buildings/2.png" room="1" w="160" x="350" y="380">
+			<collisions>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="144" w="160" x="0" y="0"/>
+			</boundaries>
+		</primitive>
+		<door direction="south" h="30" id="8" linkeddoor="7" newx="317" newy="190" room="1" unlockdoorkey="6" w="30" x="350" y="380">
+			<useablecommands>
+				<command commandname="open" directlyexecute="true">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Oak's huis binnengaan</name>
+						<name lang="en">Enter Oak's house</name>
+					</names>
+				</command>
+			</useablecommands>
+		</door>
+		<primitive h="444" id="3" image="buildings/3.png" room="1" w="288" x="850" y="400">
+			<collisions>
+				<rectangle h="60" w="288" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		
+		<doorkey carrier="player" commandrange="2" h="12" id="6" image="items/doorkey.gif" room="1" type="item" w="34" weight="5" x="200" y="400">
+			
+			<names>
+				<name lang="nl">sleutel</name>
+				<name lang="en">key</name>
+			</names>
+			
+			<collisions>
+				<rectangle h="6" isboundary="true" w="15" x="0" y="0"/>
+			</collisions>
+			
+			<useablecommands>
+				<command commandname="pickup">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Raap de sleutel op</name>
+						<name lang="en">Pick this key up</name>
+					</names>
+				</command>
+				<command commandname="cleardisplay">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Laat hem liggen</name>
+						<name lang="en">Leave it there</name>
+					</names>
+				</command>
+			</useablecommands>
+		</doorkey>
+		
+		<doorkey carrier="" commandrange="2" h="12" id="bigbuildingkey" image="items/doorkey.gif" room="1" type="item" w="34" weight="5" x="250" y="420">
+			
+			<names>
+				<name lang="nl">sleutel</name>
+				<name lang="en">key</name>
+			</names>
+			
+			<collisions>
+				<rectangle h="6" isboundary="true" w="15" x="0" y="0"/>
+			</collisions>
+			
+			<useablecommands>
+				<command commandname="pickup">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Raap de sleutel op</name>
+						<name lang="en">Pick this key up</name>
+					</names>
+				</command>
+				<command commandname="cleardisplay">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Laat hem liggen</name>
+						<name lang="en">Leave it there</name>
+					</names>
+				</command>
+			</useablecommands>
+		</doorkey>
+		
+		<doorkey carrier="" commandrange="2" h="12" id="tooheavykey" image="items/doorkey.gif" room="1" type="item" w="34" weight="500" x="280" y="450">
+			
+			<names>
+				<name lang="nl">Sleutel</name>
+				<name lang="en">key</name>
+			</names>
+			
+			<collisions>
+				<rectangle h="6" isboundary="true" w="15" x="0" y="0"/>
+			</collisions>
+			
+			<useablecommands>
+				<command commandname="pickup">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Raap de sleutel op</name>
+						<name lang="en">Pick this key up</name>
+					</names>
+				</command>
+				<command commandname="cleardisplay">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Laat hem liggen</name>
+						<name lang="en">Leave it there</name>
+					</names>
+				</command>
+			</useablecommands>
+		</doorkey>
+		
+		<primitive animated="true" animationfrequency="100" animationimages="animations/flashingtree/" h="73" id="1111111" image="nature/tree1.png" room="1" w="50" x="100" y="550">
+			<collisions>
+				<rectangle h="15" w="40" x="5" y="0"/>
+			</collisions>
+		</primitive>
+
+		<human commandrange="5" currenttextline="1" h="40" id="professor" image="organisms/professor/" room="1" velocity="1" w="28" walkimagefrequency="12" x="400" y="400">
+			<names>
+				<name lang="nl">Leraar Oak</name>
+				<name lang="en">Professor Oak(ENG)</name>
+			</names>
+			
+			<collisions>
+				<rectangle h="15" w="28" x="0" y="0"/>
+			</collisions>
+			
+			<boundaries>
+				<rectangle h="40" w="28" x="0" y="0"/>
+			</boundaries>
+			
+			<useablecommands>
+				<command commandname="talk">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Praat met Professor Oak</name>
+						<name lang="en">Talk with Professor Oak</name>
+					</names>
+				</command>
+				<command commandname="cleardisplay">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Doe niks</name>
+						<name lang="en">Do nothing</name>
+					</names>
+				</command>
+			</useablecommands>
+		</human>
+
+		<primitive collision="false" h="120" id="5" image="surfaces/road.png" room="1" w="800" x="-25" y="280" zorder="-1"/>
+		
+		
+		
+		<!--  Room 2 -->
+		<door direction="east" h="30" id="7" linkeddoor="restaurantDoor" newx="0" newy="25" room="2" w="30" x="30" y="10">
+			<useablecommands>
+				<command commandname="open" directlyexecute="true">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Terug naar pokemonland</name>
+						<name lang="en">Back to pokemonland</name>
+					</names>
+				</command>
+			</useablecommands>
+		</door>
+
+		<primitive h="32" id="8_WASDUPLICATE" image="roomobjects/bank1.png" room="2" w="16" x="90" y="130"/>
+		<primitive h="32" id="9" image="roomobjects/bank2.png" room="2" w="16" x="30" y="130"/>
+		<primitive h="24" id="10" image="roomobjects/books1.png" room="2" w="32" x="80" y="10"/>
+		<primitive h="30" id="11" image="roomobjects/kitchen1.png" room="2" w="64" x="165" y="12"/>
+		<primitive h="29" id="12" image="roomobjects/table1.png" room="2" w="28" x="60" y="130"/>
+		<primitive commandrange="3" h="32" id="15" image="roomobjects/bed1.png" room="2" w="24" x="170" y="120">
+			<useablecommands>
+				<command commandname="save">
+					<names>
+						<name lang="nl">Bewaar de spelstatus</name>
+						<name lang="en">Save this game</name>
+					</names>
+				</command>
+			</useablecommands>
+		</primitive>
+		<primitive h="32" id="16" image="walls/wall1.png" room="2" w="60" x="170" y="100">
+			<collisions>
+				<rectangle h="1" w="60" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive collision="false" h="60" id="17" image="surfaces/tapijt1.png" room="2" w="60" x="170" y="150" zorder="-1"/>
+		<primitive collision="false" h="32" id="18" image="surfaces/vloerkleed1.png" room="2" w="64" x="60" y="70" zorder="-1"/>
+		<primitive h="31" id="19" image="doors/door1.png" room="2" w="25" x="30" y="0"/>
+		<primitive collision="false" h="40" id="14" image="surfaces/square1.png" room="2" w="75" x="162" y="40" zorder="-1"/>
+		<primitive collision="false" h="32" id="20" image="walls/wall2.png" room="2" w="125" x="62" y="0" zorder="-1"/>
+		<primitive collision="false" h="32" id="21" image="walls/wall3.png" room="2" w="75" x="162" y="0" zorder="-1"/>
+	
+		
+		<!-- 
+		<complex id="7" room="103" x="400" y="700" img="rarePergolaOfzo.png">
+			<collisions>
+				<collision type="rectangle" x="0" y="0" h="10" w="10" />
+				<collision type="rectangle" x="50" y="0" h="10" w="10" />
+			</collisions>
+		</complex> -->
+		<!-- <primitive id="2" room="103" x="460" y="720" cx="0" cy="0" cw="40" ch="40" weight="10" image="tree.jpg" /> -->
+		<!-- 
+		<primitive id="3" room="103" x="580" y="720" w="10" h="40" weight="10" image="tree.jpg">
+			<collisions>
+				<collision type="rectangle" x="0" y="0" h="10" w="10" />
+			</collisions>
+		</primitive>
+		<primitive id="4" room="103" x="650" y="600" w="10" h="40" weight="10" image="tree.jpg" />
+		-->
+		
+		<!--  Trees on the lef side -->	
+		<primitive h="73" id="301" image="nature/tree1.png" room="3" w="50" x="25" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="302" image="nature/tree1.png" room="3" w="50" x="25" y="85">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="303" image="nature/tree1.png" room="3" w="50" x="25" y="135">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="304" image="nature/tree1.png" room="3" w="50" x="25" y="185">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="305" image="nature/tree1.png" room="3" w="50" x="25" y="235">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="306" image="nature/tree1.png" room="3" w="50" x="25" y="285">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="307" image="nature/tree1.png" room="3" w="50" x="25" y="335">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="308" image="nature/tree1.png" room="3" w="50" x="25" y="385">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="309" image="nature/tree1.png" room="3" w="50" x="25" y="435">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="310" image="nature/tree1.png" room="3" w="50" x="25" y="485">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="311" image="nature/tree1.png" room="3" w="50" x="25" y="535">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="312" image="nature/tree1.png" room="3" w="50" x="25" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<!-- Tress on the top side -->
+		<primitive h="73" id="" image="nature/tree1.png" room="3" w="50" x="75" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="313" image="nature/tree1.png" room="3" w="50" x="125" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="314" image="nature/tree1.png" room="3" w="50" x="175" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="315" image="nature/tree1.png" room="3" w="50" x="225" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="316" image="nature/tree1.png" room="3" w="50" x="275" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="317" image="nature/tree1.png" room="3" w="50" x="325" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="321" image="nature/tree1.png" room="3" w="50" x="425" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="475" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="525" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="575" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="625" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="675" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="35">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<!-- Trees on the right side -->
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="85">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="135">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="185">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="235">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="285">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="335">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="385">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="435">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="485">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="535">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<!--  Trees at the bottom side -->
+		<primitive h="73" id="" image="nature/tree1.png" room="3" w="50" x="75" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="313" image="nature/tree1.png" room="3" w="50" x="125" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="314" image="nature/tree1.png" room="3" w="50" x="175" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="315" image="nature/tree1.png" room="3" w="50" x="225" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="321" image="nature/tree1.png" room="3" w="50" x="325" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="321" image="nature/tree1.png" room="3" w="50" x="375" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="321" image="nature/tree1.png" room="3" w="50" x="425" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="475" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="525" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="575" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="625" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="675" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="322" image="nature/tree1.png" room="3" w="50" x="725" y="585">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<!--  Buildings -->
+		<primitive h="126" id="" image="buildings/house1.png" room="3" w="160" x="180" y="240">
+			<collisions>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</boundaries>
+		</primitive>
+		<primitive h="126" id="" image="buildings/house1.png" room="3" w="160" x="560" y="240">
+			<collisions>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</boundaries>
+		</primitive>
+		<!--  Surfaces -->
+		<primitive collision="false" h="60" id="" image="surfaces/grasspath1.png" room="3" w="453" x="375" y="300" zorder="-2"/>
+		<primitive collision="false" h="250" id="" image="surfaces/grasspath2.png" room="3" w="65" x="375" y="247" zorder="-1"/>
+		<primitive collision="false" h="292" id="" image="surfaces/grasspath3.png" room="3" w="65" x="275" y="584" zorder="-1"/>
+		<primitive h="160" id="" image="surfaces/water1.png" room="3" w="324" x="500" y="500"/>
+		<!--  Flowers -->
+		<primitive collision="false" h="33" id="" image="nature/flowers3.png" room="3" w="33" x="280" y="200" zorder="-1"/>
+		<primitive collision="false" h="33" id="" image="nature/flowers3.png" room="3" w="33" x="70" y="390" zorder="-1"/>
+		<primitive collision="false" h="33" id="" image="nature/flowers3.png" room="3" w="33" x="650" y="290" zorder="-1"/>
+		<primitive h="62" id="" image="nature/flowers1.png" room="3" w="30" x="440" y="230"/>
+		<!--  Pokemon -->
+		<primitive commandrange="5" h="34" id="pikachu" image="organisms/pokemon/pikachu.png" room="3" w="35" x="200" y="500">
+			<names>
+				<name lang="nl">Pikachu</name>
+				<name lang="en">Pikachu</name>
+			</names>
+		</primitive>
+		<!-- Doors -->
+		<door direction="south" h="1" id="3_enterBush" linkeddoor="bush1_leaveBush" newx="374" newy="12" room="3" w="50" x="374" y="13">
+	   		<useablecommands>
+				<command commandname="open">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Bos binnengaan</name>
+						<name lang="en">Enter bush</name>
+					</names>
+				</command>
+			</useablecommands>
+	    </door>
+
+		<!-- Room Bush1 -->
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="633" y="61">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="738" y="245">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="383" y="307">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="733" y="162">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="480" y="565">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>	
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="40" y="442">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="45" y="89">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="732" y="77">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="40" y="362">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="136" y="61">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="40" y="180">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="339" y="61">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="238" y="310">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="42" y="266">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="647" y="555">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="568" y="561">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="128" y="310">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="80" y="520">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="704" y="519">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="602" y="323">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="440" y="63">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="238" y="57">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="735" y="396">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="259" y="561">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="479" y="484">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="385" y="233">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="600" y="392">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="484" y="125">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="737" y="460">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="257" y="484">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="185" y="227">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="538" y="67">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="160" y="560">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="160" y="560">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="647" y="247">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="738" y="320">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="bush1" w="50" x="563" y="248">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive collision="false" h="250" id="" image="surfaces/grasspath4.png" room="bush1" w="65" x="368" y="676" zorder="-1"/>
+		<door direction="south" h="1" id="bush1_leaveBush" linkeddoor="3_enterBush" newx="317" newy="190" room="bush1" w="150" x="369" y="568">
+	   		<useablecommands>
+				<command commandname="open" directlyexecute="true">
+					<!-- Names used to interact with the user -->
+					<names>
+						<name lang="nl">Bos verlaten</name>
+						<name lang="en">Leave bush</name>
+					</names>
+				</command>
+			</useablecommands>
+	   </door>
+		<!-- Room city1 -->
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="706" y="54">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="551" y="47">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="186" y="43">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="447" y="47">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="605" y="52">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="657" y="48">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="81" y="44">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="395" y="47">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="27" y="96">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="133" y="43">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="237" y="44">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="28" y="44">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="345" y="45">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="28" y="149">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="499" y="48">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1141" y="55">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="344" y="101">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1029" y="50">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="810" y="98">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="26" y="447">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="841" y="463">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="466" y="362">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="302" y="272">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="28" y="193">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1092" y="108">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="246" y="270">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="839" y="365">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="525" y="272">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1089" y="56">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="247" y="364">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="525" y="147">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="190" y="269">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="839" y="270">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="26" y="339">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="809" y="53">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="758" y="54">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="974" y="51">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="137" y="271">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="247" y="316">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="27" y="394">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1052" y="196">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="918" y="51">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1144" y="109">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="27" y="242">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="636" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="27" y="295">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="840" y="322">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="526" y="92">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="467" y="323">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="582" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="697" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="840" y="415">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="466" y="272">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="810" y="147">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1099" y="173">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="238" y="101">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="864" y="51">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="83" y="270">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="355" y="273">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1139" y="619">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="925" y="617">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1104" y="221">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="842" y="505">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1193" y="559">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1193" y="133">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1193" y="60">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1192" y="168">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1192" y="373">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1195" y="455">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="978" y="616">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1146" y="167">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1192" y="613">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="873" y="613">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1194" y="509">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1193" y="251">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1193" y="293">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1191" y="334">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1084" y="617">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1193" y="208">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1149" y="226">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1032" y="616">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="409" y="274">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1195" y="94">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+		<primitive h="73" id="" image="nature/tree1.png" room="city1" w="50" x="1194" y="408">
+			<collisions>
+				<rectangle h="15" w="40" x="0" y="0"/>
+			</collisions>
+		</primitive>
+
+		<!-- Surfaces -->
+		<primitive collision="false" h="60" id="5" image="surfaces/stoep1.png" room="city1" w="950" x="548" y="208" zorder="-1"/>
+		<primitive collision="false" h="60" id="5" image="surfaces/stoep1.png" room="city1" w="730" x="434" y="424" zorder="-1"/>
+		<primitive collision="false" h="200" id="5" image="surfaces/stoep1.png" room="city1" w="60" x="777" y="560" zorder="-1"/>
+		<primitive collision="false" h="200" id="5" image="surfaces/stoep1.png" room="city1" w="60" x="776" y="408" zorder="-1"/>
+		<primitive collision="false" h="50" id="5" image="surfaces/stoep1.png" room="city1" w="350" x="972" y="559" zorder="-1"/>
+		<primitive collision="false" h="292" id="" image="surfaces/grasspath3.png" room="city1" w="65" x="291" y="149" zorder="-1"/>
+		
+		<!-- Buildings -->		
+		<primitive h="112" id="" image="buildings/building1.png" room="city1" w="160" x="357" y="363">
+			<collisions>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="144" w="160" x="0" y="0"/>
+			</boundaries>
+		</primitive>
+		<primitive h="158" id="" image="buildings/building2.png" room="city1" w="160" x="135" y="165">
+			<collisions>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="144" w="160" x="0" y="0"/>
+			</boundaries>
+		</primitive>
+		<primitive h="124" id="" image="buildings/building3.png" room="city1" w="128" x="431" y="149">
+			<collisions>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="144" w="160" x="0" y="0"/>
+			</boundaries>
+		</primitive>
+		<primitive h="140" id="" image="buildings/building4.png" room="city1" w="160" x="139" y="364">
+			<collisions>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="144" w="160" x="0" y="0"/>
+			</boundaries>
+		</primitive>
+		<primitive h="330" id="" image="buildings/building5.png" room="city1" w="284" x="1016" y="521">
+			<collisions>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="144" w="160" x="0" y="0"/>
+			</boundaries>
+		</primitive>
+		<primitive h="126" id="" image="buildings/building6.png" room="city1" w="224" x="666" y="148">
+			<collisions>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="144" w="160" x="0" y="0"/>
+			</boundaries>
+		</primitive>
+		<primitive h="182" id="" image="buildings/building7.png" room="city1" w="250" x="957" y="168">
+			<collisions>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="144" w="160" x="0" y="0"/>
+			</boundaries>
+		</primitive>
+		<primitive h="144" id="" image="buildings/building8.png" room="city1" w="224" x="609" y="364">
+			<collisions>
+				<rectangle h="60" w="160" x="0" y="0"/>
+			</collisions>
+			<boundaries>
+				<rectangle h="144" w="160" x="0" y="0"/>
+			</boundaries>
+		</primitive>
+	</roomobjects>
+	<!-- Needs to be discussed and revised -->
+	<events>
+	
+	<!-- 
+		<event id="1">
+			<timesexecuted>0</timesexecuted>
+			<timesexecutable>8</timesexecutable>
+			<conditions>
+				<initiator>player</initiator> 
+				<interactor>2</interactor>
+				<eventtype>collision</eventtype>
+				
+				
+				<event id="2">
+					<fired>1</fired>
+				</event>
+				<event id="3">
+					<fired>0</fired>
+				</event>
+				<checkproperty roomobject="1" type="checkXYPosition">
+					<x>between 50 and 60</x>
+					<y>between 50 and 60</y>
+				</checkproperty> 
+				
+			</conditions>
+			<execute>
+				<command commandname="talk" executer="professor" initiator="player">
+					<tekstline>1</tekstline>
+				</command>
+			</execute>
+		</event>
+		-->
+		<event id="2">
+			<timesexecuted>0</timesexecuted>
+			<timesexecutable>0</timesexecutable>
+			<conditions>
+				<initiator>player</initiator> 
+				<interactor>8</interactor>
+				<eventtype>lockeddoor</eventtype>
+				
+				<!-- 
+				<event id="2">
+					<fired>1</fired>
+				</event>
+				<event id="3">
+					<fired>0</fired>
+				</event>
+				<checkproperty roomobject="1" type="checkXYPosition">
+					<x>between 50 and 60</x>
+					<y>between 50 and 60</y>
+				</checkproperty> 
+				-->
+			</conditions>
+			<execute>
+				<command commandname="createdisplay" initiator="professor">
+					<!-- The message that will be displayed -->
+					<message>
+						<names>
+							<name lang="nl">De deur van mijn huis is op slot en ik ben de sleutel kwijt geraakt. Wil jij de sleutel zoeken? a.u.b.?...</name>
+							<name lang="en">The door of my house is locked and i've lost the key. Do you want to search the key for me, please?...</name>
+						</names>
+					</message>
+					
+					<!-- The options the user can pick -->
+					<options>
+						<command commandname="cleardisplay">
+							<names>
+								<name lang="nl">Ja professor</name>
+								<name lang="en">Yes professor</name>
+							</names>
+						</command>
+					</options>
+					<!-- the name of the command (not used in this situation, but example for other situation) -->
+					<names>
+						<name lang="nl">Deur opslot</name>
+						<name lang="en">Door locked</name>
+					</names>
+				</command>
+			</execute>
+			
+		</event>
+		
+		<!-- 
+		<event id="3">
+			<timesexecuted>0</timesexecuted>
+			<timesexecutable>0</timesexecutable>
+			<conditions>
+				<initiator>professor</initiator> 
+				<interactor>professor</interactor>
+				<eventtype>talk</eventtype>
+		
+			</conditions>
+			<execute>			
+				<command commandname="settextline" initiator="professor" newid="2">
+					<names>
+						<name lang="nl">Update van de textlijn</name>
+						<name lang="en">Update from the textline</name>
+					</names>
+				</command>
+			</execute>
+			
+		</event>
+		-->
+		
+		<!-- A conversation with the professor! -->
+		<event id="4">
+		
+			<timesexecuted>0</timesexecuted>
+			<timesexecutable>1</timesexecutable>
+			<conditions>
+				<initiator>professor</initiator> 
+				<interactor>professor</interactor>
+				<eventtype>talk</eventtype>
+			</conditions>
+			
+			<execute>
+			
+			<!-- 
+					FIRST DISPLAY	
+			-->
+			
+				<command commandname="createdisplay" initiator="professor">
+					<!-- The message that will be displayed -->
+					<message>
+						<names>
+							<name lang="nl">De deur van mijn huis is op slot en ik ben de sleutel kwijt geraakt. Wil jij de sleutel zoeken? a.u.b.?...</name>
+							<name lang="en">The door of my house is locked and i've lost the key. Do you want to search the key for me, please?...</name>
+						</names>
+					</message>
+					
+					
+					<options>
+					
+			<!-- 
+					SECOND DISPLAY	
+			-->				
+					
+						<command commandname="createdisplay" initiator="professor">
+							<!-- The message that will be displayed -->
+							<message>
+								<names>
+									<name lang="nl">Als je de sleutel vind, mag je gebruik maken van de mogelijkheid om je spel op te slaan!</name>
+									<name lang="en">If you are able to find the key, you can use the the save game option!</name>
+								</names>
+							</message>
+							
+						
+							<options>
+								<command commandname="cleardisplay">
+									<names>
+										<name lang="nl">Ik doe mijn best!</name>
+										<name lang="en">I'll do my best!</name>
+									</names>
+								</command>
+							</options>
+							
+							<!-- the name of the command (not used in this situation, but example for other situation) -->
+							<names>
+								<name lang="nl">...</name>
+								<name lang="en">...</name>
+							</names>
+						</command>
+						
+						
+	
+					</options>
+					<!-- the name of the command (not used in this situation, but example for other situation) -->
+					<names>
+						<name lang="nl">...</name>
+						<name lang="en">...</name>
+					</names>
+				</command>
+				
+				<command commandname="settextline" initiator="professor" newid="2"/>
+	
+			</execute>
+		</event>
+		
+	</events>
+	<!-- end -->
+	<commands>
+		<command name="open">
+			<names language="nl">open</names>
+			<names language="en">open</names>
+		</command>
+	</commands>
+	<texts>
+		<text id="1">
+			<line lang="nl">Hallo Jeffrey, ik ben professor Oak!</line>
+			<line lang="en">Hello Jeffrey, I am professor Oak</line>
+		</text>
+		
+		<text id="2">
+			<line lang="nl">Hoe staat het met je zoektocht?</line>
+			<line lang="en">Hows the search going?</line>
+		</text>
+		
+		<text id="3">
+			<line lang="nl">Ik zie dat je de sleutel hebt gevonden, ga maar naar binnen. In mijn huis kun je de spelstatus opslaan!</line>
+			<line lang="en">I see that you've found the key, go inside then! In my house you can save your gamestate?</line>
+		</text>
+	</texts>
+	<!-- Standard translations, this is usefull for situations where an Iventory may be called
+			something different. like in a future based game: memory
+			Maybe merge command names under this -->
+	<standardtranslations>
+		<inventorywindow>
+			<name lang="nl">Inventaris</name>
+			<name lang="en">Inventory</name>
+		</inventorywindow>
+	</standardtranslations>
+</game>

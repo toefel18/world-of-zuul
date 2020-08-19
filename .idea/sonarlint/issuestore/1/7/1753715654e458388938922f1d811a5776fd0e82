@@ -1,0 +1,31 @@
+
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(è¥©ıÿÿÿÿ
+R	java:S125—"<This block of commented-out lines of code should be removed.(»ÜßÕ
+o
+java:S22935"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ñœ¨å
+T	java:S106Ñ"9Replace this use of System.out or System.err by a logger.(¹ùª‰ûÿÿÿÿ
+R	java:S125‹"<This block of commented-out lines of code should be removed.(³´ôÃ
+N	java:S106k"9Replace this use of System.out or System.err by a logger.(Í¸Ñ„
+V	java:S125""<This block of commented-out lines of code should be removed.(¹ô‡åıÿÿÿÿ
+N
+java:S4973R"9Use the "equals" method if value comparison was intended.(ä¡ñ9
+n
+java:S3776Š"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(¸ïàªıÿÿÿÿ
+h
+java:S3776I"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(“°’·
+D
+java:S1905V"/Remove this unnecessary cast to "NamedNodeMap".(‘©†
+H
+java:S1135/"2Complete the task associated to this TODO comment.(ò€Í
+T
+java:S2130h"9Use "Integer.parseInt" for this string-to-int conversion.(§Ğâ±úÿÿÿÿ
+]
+java:S2142Ô"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€
+N	java:S106|"9Replace this use of System.out or System.err by a logger.(™×Õè
+?	java:S108Ä")Either remove or fill this block of code.(áå…–
+n	java:S135N"YReduce the total number of break and continue statements in this loop to use at most one.(º«õ
+6
+java:S3626}"Remove this redundant jump.(ˆÙœĞøÿÿÿÿ
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(Ó¼¾Ó
+N
+java:S1135Õ"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ

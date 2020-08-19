@@ -1,0 +1,11 @@
+
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(Ş®½Æşÿÿÿÿ8ç‹˜·À.
+T
+java:S1135$"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ç‹˜·À.
+u
+java:S1450"SRemove the "game" field and declare it as a local variable in the relevant methods.(Ä¿–øÿÿÿÿ8ç‹˜·À.
+
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(Îõõ8ç‹˜·À.
+c
+java:S2142#"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8ç‹˜·À.
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(´ı–8ç‹˜·À.

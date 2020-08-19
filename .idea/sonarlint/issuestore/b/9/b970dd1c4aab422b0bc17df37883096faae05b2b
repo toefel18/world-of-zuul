@@ -1,0 +1,52 @@
+
+w
+java:S1450H"URemove the "player" field and declare it as a local variable in the relevant methods.(Á´”æùÿÿÿÿ8­¤™·À.
+K
+java:S1604˜"(Make this anonymous inner class a lambda(¿Í ‚úÿÿÿÿ8­¤™·À.
+a
+java:S1155â">Use isEmpty() to check whether the collection is empty or not.(œªÁüÿÿÿÿ8¸Êº·À.
+a
+java:S1155‰">Use isEmpty() to check whether the collection is empty or not.(—ûÎıÿÿÿÿ8¸Êº·À.
+V
+java:S2755¨"3Disable access to external entities in XML parsing.(£ä­˜ûÿÿÿÿ8­¤™·À.
+F
+java:S2140æ")Use "java.util.Random.nextInt()" instead.(åª«o8­¤™·À.
+F
+java:S1604ë"(Make this anonymous inner class a lambda(æÅ—Ÿ8­¤™·À.
+d	java:S899¢"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8­¤™·À.
+P
+java:S1199©"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8­¤™·À.
+P
+java:S1199Ã"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8­¤™·À.
+Y	java:S125É"<This block of commented-out lines of code should be removed.(×òæ®8­¤™·À.
+P
+java:S1199Ù"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8­¤™·À.
+]	java:S125d"<This block of commented-out lines of code should be removed.(ùµÛÚüÿÿÿÿ8­¤™·À.
+U
+java:S1135"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8­¤™·À.
+k
+java:S2095¥"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ğÎŠşÿÿÿÿ8­¤™·À.
+F
+java:S1604ß"(Make this anonymous inner class a lambda(óÙÖ‡8­¤™·À.
+v
+java:S2293M"YReplace the type specification in this constructor call with the diamond operator ("<>").(êÌ½Ì8­¤™·À.
+P
+java:S2755}"3Disable access to external entities in XML parsing.(Ò‹ñÙ8­¤™·À.
+P
+java:S1199­"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8­¤™·À.
+V
+java:S2755ù"3Disable access to external entities in XML parsing.(ƒ”±êùÿÿÿÿ8­¤™·À.
+P
+java:S1199Ç"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8­¤™·À.
+P
+java:S1199§"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8­¤™·À.
+G
+java:S3010Z"%Remove this assignment of "instance".(ñõîÙşÿÿÿÿ8­¤™·À.
+K
+java:S1604µ"(Make this anonymous inner class a lambda(Àê°Ôúÿÿÿÿ8­¤™·À.
+`
+java:S2259Ì"BA "NullPointerException" could be thrown; "game" is nullable here.(Ÿ–‰ù8­¤™·À.
+K
+java:S1604"(Make this anonymous inner class a lambda(Ğ‰Ïùÿÿÿÿ8­¤™·À.
+O
+java:S1199~"-Extract this nested code block into a method.(ÒÌâ–øÿÿÿÿ8­¤™·À.

@@ -1,0 +1,35 @@
+
+N	java:S1069"9Replace this use of System.out or System.err by a logger.(«ŞÄ‡
+R
+java:S1117@"<Rename "commands" which hides the field declared at line 24.(ôœÆµ
+s	java:S135w"YReduce the total number of break and continue statements in this loop to use at most one.(âô¡™ûÿÿÿÿ
+
+java:S1319&"sThe type of the "commands" object should be an interface such as "List" rather than the implementation "ArrayList".(¦Öûÿÿÿÿ
+I
+java:S1135›"2Complete the task associated to this TODO comment.(ÍŠäÍ
+V
+java:S1117?";Rename "message" which hides the field declared at line 23.(¥İ£ ÿÿÿÿÿ
+R	java:S125—"<This block of commented-out lines of code should be removed.(ÕØÛÑ
+H
+java:S1135W"2Complete the task associated to this TODO comment.(«í
+J
+java:S1172."/Remove this unused method parameter "executer".(Š¼ıÚüÿÿÿÿ
+ˆ
+java:S1319""sThe type of the "commands" object should be an interface such as "List" rather than the implementation "ArrayList".(†ó.
+R
+java:S1117p"<Rename "commands" which hides the field declared at line 24.(êÆÏå
+T
+java:S1117…"=Rename "initiator" which hides the field declared at line 22.(ì¨Ëõ
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(¬Í´
+t
+java:S2293l"YReplace the type specification in this constructor call with the diamond operator ("<>").(µ¨Ø³ûÿÿÿÿ
+u
+java:S1488N"_Immediately return this expression instead of assigning it to the temporary variable "command".(©ÓÎè
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(›¥äûÿÿÿÿ
+‰
+java:S1319"sThe type of the "commands" object should be an interface such as "List" rather than the implementation "ArrayList".(¹·“å
+m
+java:S3776k"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(ßúÑöşÿÿÿÿ
+S	java:S1064"9Replace this use of System.out or System.err by a logger.(ÆÇÕĞşÿÿÿÿ
+o
+java:S2293@"YReplace the type specification in this constructor call with the diamond operator ("<>").(ôœÆµ

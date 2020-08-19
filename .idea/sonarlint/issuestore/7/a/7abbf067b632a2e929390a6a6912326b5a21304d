@@ -1,0 +1,51 @@
+
+`
+java:S2184³"BCast one of the operands of this division operation to a "double".(²¦…’8ş¹¸·À.
+V	java:S106Ó"9Replace this use of System.out or System.err by a logger.(ËùÃİ8ş¹¸·À.
+Y	java:S125«"<This block of commented-out lines of code should be removed.(¡»ù©8ş¹¸·À.
+U
+java:S1135Ë"2Complete the task associated to this TODO comment.(ÌÕØÙÿÿÿÿÿ8ş¹¸·À.
+[	java:S106•"9Replace this use of System.out or System.err by a logger.(Ò”„àøÿÿÿÿ8ş¹¸·À.
+Y	java:S125ê"<This block of commented-out lines of code should be removed.(©”ßæ8ş¹¸·À.
+F
+java:S1125Ê"(Remove the literal "true" boolean value.(îÍºÃ8ş¹¸·À.
+
+java:S1186]"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÏØÈ®8ş¹¸·À.
+P
+java:S1135"2Complete the task associated to this TODO comment.(•í8ş¹¸·À.
+V	java:S106¨"9Replace this use of System.out or System.err by a logger.(ª´ğÛ8ş¹¸·À.
+_
+java:S2259µ"AA "NullPointerException" could be thrown; "img" is nullable here.(ÌÀÎ§8ş¹¸·À.
+Z
+java:S1854Ÿ"<Remove this useless assignment to local variable "location".(È€ˆº8ş¹¸·À.
+U
+java:S1135›"2Complete the task associated to this TODO comment.(©‰ÔÖøÿÿÿÿ8ş¹¸·À.
+Y	java:S125Ø"<This block of commented-out lines of code should be removed.(¾è¦8ş¹¸·À.
+X	java:S125ì"<This block of commented-out lines of code should be removed.(è’ßA8ş¹¸·À.
+|
+java:S2293Æ"YReplace the type specification in this constructor call with the diamond operator ("<>").(£ü¹—üÿÿÿÿ8ş¹¸·À.
+^	java:S125à"<This block of commented-out lines of code should be removed.(—áóŸûÿÿÿÿ8ş¹¸·À.
+S
+java:S1481ğ"0Remove this unused "innerHeight" local variable.(ñ­¶Ëúÿÿÿÿ8ş¹¸·À.
+V	java:S106–"9Replace this use of System.out or System.err by a logger.(ËùÃİ8ş¹¸·À.
+e
+java:S2184¸"BCast one of the operands of this division operation to a "double".(¡Ÿ·şÿÿÿÿ8ş¹¸·À.
+…
+java:S1192•"bDefine a constant instead of duplicating this literal "ConcurrentModificationException: " 3 times.(Ò”„àøÿÿÿÿ8ş¹¸·À.
+v
+java:S2293$"YReplace the type specification in this constructor call with the diamond operator ("<>").(æíÄÆ8Ì³£·À.
+b
+java:S1854ğ"?Remove this useless assignment to local variable "innerHeight".(ñ­¶Ëúÿÿÿÿ8ş¹¸·À.
+{
+java:S2293%"YReplace the type specification in this constructor call with the diamond operator ("<>").(³ÁÏşşÿÿÿÿ8Ì³£·À.
+H
+java:S2185¸"%Remove this silly call to "Math.ceil"(¡Ÿ·şÿÿÿÿ8ş¹¸·À.
+C
+java:S2185³"%Remove this silly call to "Math.ceil"(²¦…’8ş¹¸·À.
+Y	java:S125œ"<This block of commented-out lines of code should be removed.( ÔÄ±8ş¹¸·À.
+p
+java:S3776–"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(»ø˜û8ş¹¸·À.
+D
+java:S1905Û"&Remove this unnecessary cast to "int".(¢÷®ï8ş¹¸·À.
+K
+java:S1481Ÿ"-Remove this unused "location" local variable.(È€ˆº8ş¹¸·À.

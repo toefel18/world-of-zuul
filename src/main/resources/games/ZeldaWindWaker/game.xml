@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game version="1.1" language="nl" world="game1">
+	<rooms>
+		<room id="103" w="1536" h="1536" image="level.jpg" />
+		<room id="104" w="1536" h="1536" image="level.png" />
+	</rooms>
+	<roomobjects>
+		
+		<primitive id="2" room="103" x="460" y="720" w="10" h="40" weight="10" image="tree.jpg" />
+		<primitive id="3" room="103" x="580" y="720" w="10" h="40" weight="10" image="tree.jpg" />
+		<primitive id="4" room="103" x="650" y="600" w="10" h="40" weight="10" image="tree.jpg" />
+		<player id="1" room="103" x="700" y="700" w="10" h="10" commandrange="10" image="player.jpg" usecontrolset="1">
+			<useablecommands>
+				<command>open</command>
+				<command>talk</command>
+			</useablecommands>
+			
+		</player>
+		
+		<primitive id="5" room="104" x="100" y="100" w="10" h="40" weight="10" image="tree.jpg" />
+		
+		<!-- 
+		<player id="2" room="104" x="200" y="100" w="10" h="10" commandrange="10" image="player.jpg" usecontrolset="2">
+			<useablecommands>
+				<command>open</command>
+				<command>talk</command>
+			</useablecommands>
+		</player>
+		
+		<primitive id="6" room="103" x="1336" y="1436" w="10" h="40" weight="10" image="tree.jpg" />
+		
+		<player id="3" room="103" x="1436" y="1436" w="10" h="10" commandrange="10" image="player.jpg" usecontrolset="1">
+			<useablecommands>
+				<command>open</command>
+				<command>talk</command>
+			</useablecommands>
+		</player>
+		 -->
+	</roomobjects>
+	<!-- Needs to be discussed and revised -->
+	<events>
+		<event id="1">
+			<timesexecuted>0</timesexecuted>
+			<timesexecutable>0</timesexecutable>
+			
+			<conditions>
+				<initiator>23</initiator>
+				<interactor>52</interactor>
+				<event id="2">
+					<fired>1</fired>
+				</event>
+				<event id="3">
+					<fired>0</fired>
+				</event>
+			</conditions>
+			
+			<commands>
+				<command>
+					<name>talk</name>
+					<initiator>
+						<id>65</id>
+						<tekstline>1</tekstline>
+					</initiator>
+					<interactor>52</interactor>
+				</command>
+				
+				<command>
+					<name>attachwalkpath</name>
+					<initiator>
+						<id>65</id>
+						<tekstline>1</tekstline>
+					</initiator>
+					<interactor>52</interactor>
+				</command>
+			</commands>
+		</event>
+	</events>
+	<!-- end -->
+	<texts>
+		<text id="1" emotion="hoerig">
+			<line lang="nl">Hallo %PLAYERNAME%</line>
+			<line lang="en">Hello</line>
+		</text>
+	</texts>
+</game>

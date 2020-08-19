@@ -1,0 +1,11 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(æ©›óüÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(×Äã›ýÿÿÿÿ
+Ž
+java:S1319Q"sThe type of the "commands" object should be an interface such as "List" rather than the implementation "ArrayList".(« ‡Ùûÿÿÿÿ
+W	java:S125±"<This block of commented-out lines of code should be removed.(êèÇþþÿÿÿÿ
+‹
+java:S1319E"pThe type of the "commands" object should be an interface such as "Map" rather than the implementation "HashMap".(œÙð¹ýÿÿÿÿ
+‹
+java:S1319q"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(“è„Žùÿÿÿÿ

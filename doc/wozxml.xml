@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game version="1.1">
+	<rooms>
+		<room id="102" />
+	</rooms>
+	BITMAPS
+	<roomobjects>
+		<roomobject id="1">
+			<type>roomobject</type>
+			<room>52</room>
+			<x>283</x>
+			<y>394</y>
+			<texture>door.bmp</texture>
+			<useablecommands>
+				<command>open</command>
+				<command>talk</command>
+			</useablecommands>
+		</roomobject>
+		<roomobject id="23">
+			<type>player</type>
+			<room>102</room>
+			<x>0</x>
+			<y>0</y>
+		</roomobject>
+	</roomobjects>
+	
+	<events>
+		<event id="1">
+			<timesexecuted>0</timesexecuted>
+			<timesexecutable>0</timesexecutable>
+			
+			<conditions>
+				<initiator>23</initiator>
+				<interactor>52</interactor>
+				<event id="2">
+					<condition>fired</condition>
+				</event>
+				<event id="3">
+					<condition>notfired</condition>
+				</event>
+			</conditions>
+			
+			<commands>
+				<command>
+					<name>talk</name>
+					<initiator>
+						<id>65</id>
+						<tekstline>1</tekstline>
+					</initiator>
+					<interactor>52</interactor>
+				</command>
+				
+				<command>
+					<name>attachwalkpath</name>
+					<initiator>
+						<id>65</id>
+						<tekstline>1</tekstline>
+					</initiator>
+					<interactor>52</interactor>
+				</command>
+			</commands>
+		</event>
+	</events>
+	<texts>
+		<language id="nl-NL" name="Nederlands">
+			<tekst id="1">Hallo, nieuweling</tekst>
+			<tekst id="2">Hallo, nieuweling</tekst>
+			<tekst id="3">Hallo, nieuweling</tekst>
+			<tekst id="4">Hallo, nieuweling</tekst>
+		</language>
+		
+		<language id="nl-NL" name="Nederlands">
+			<tekst id="1">Hallo, nieuweling</tekst>
+			<tekst id="2">Hallo, nieuweling</tekst>
+			<tekst id="3">Hallo, nieuweling</tekst>
+			<tekst id="4">Hallo, nieuweling</tekst>
+		</language>
+	
+		<language id="en-EN" name="English">
+			<tekst id="1">Hello, newbee</tekst>
+		</language>
+	</texts>
+</game>

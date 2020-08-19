@@ -1,0 +1,196 @@
+
+B
+java:S1905™"+Remove this unnecessary cast to "NodeList".(¨®“·
+n	java:S135µ"YReduce the total number of break and continue statements in this loop to use at most one.(œê±
+F
+java:S1066ü"/Merge this if statement with the enclosing one.(ú¦˜Å
+B
+java:S1075Ó"&Remove this hard-coded path-delimiter.(Ê… Çıÿÿÿÿ
+u
+java:S2293š"YReplace the type specification in this constructor call with the diamond operator ("<>").(¡¾÷ìüÿÿÿÿ
+p
+java:S2293¦"YReplace the type specification in this constructor call with the diamond operator ("<>").(‹§ƒ
+u
+java:S2293­"YReplace the type specification in this constructor call with the diamond operator ("<>").(Êô“âÿÿÿÿÿ
+Y
+java:S1117Ê	"CRename "commandDisplay" which hides the field declared at line 209.(ÕË·h
+O	java:S106¨"9Replace this use of System.out or System.err by a logger.(ŸğÎß
+I
+java:S1135£	"2Complete the task associated to this TODO comment.(Ì˜Ğ¹
+O
+java:S2755Í"3Disable access to external entities in XML parsing.(©¦£„ûÿÿÿÿ
+I
+java:S1135®"2Complete the task associated to this TODO comment.(½£ÚÏ
+N
+java:S1135ô"2Complete the task associated to this TODO comment.(Æ¾îŸúÿÿÿÿ
+]
+java:S2147ò"FCombine this catch with the one at line 1130, which has the same body.(®ÑÀ€
+a	java:S112È"FDefine and throw a dedicated exception instead of using a generic one.(ó¿·²ùÿÿÿÿ
+I
+java:S1135›"2Complete the task associated to this TODO comment.(äÙŞ•
+I
+java:S1135™"2Complete the task associated to this TODO comment.(±¢Ãå
+I
+java:S1905Õ"+Remove this unnecessary cast to "ICommand".(¥êˆé8½‡­·À.
+W	java:S125›"<This block of commented-out lines of code should be removed.(ÔİŞüÿÿÿÿ
+O
+java:S2755å"3Disable access to external entities in XML parsing.(£ä­˜ûÿÿÿÿ
+P
+java:S4973ø"9Use the "equals" method if value comparison was intended.(ÄÛŠè
+p
+java:S1215¨"TDon't try to be smarter than the JVM, remove this call to run the garbage collector.(Öüêšûÿÿÿÿ
+~
+java:S1845È"bRename field "music" to prevent any misunderstanding/clash with field "MUSIC" defined on line 148.(§¸µ¬şÿÿÿÿ
+N
+java:S1135Ğ"2Complete the task associated to this TODO comment.(Ûƒ©ùşÿÿÿÿ
+N
+java:S1135˜"2Complete the task associated to this TODO comment.(üğÜüÿÿÿÿÿ
+W	java:S125ì"<This block of commented-out lines of code should be removed.(ÁìÄˆûÿÿÿÿ
+T	java:S106Á"9Replace this use of System.out or System.err by a logger.(ÇÃ¼ßøÿÿÿÿ
+I
+java:S1135ª"2Complete the task associated to this TODO comment.(Í„¸
+T	java:S106Û"9Replace this use of System.out or System.err by a logger.(‘·ùùÿÿÿÿ
+p
+java:S2293¥	"YReplace the type specification in this constructor call with the diamond operator ("<>").(²µ¹£
+W	java:S125„
+"<This block of commented-out lines of code should be removed.(¡»¢üùÿÿÿÿ
+O	java:S106Æ"9Replace this use of System.out or System.err by a logger.(ÄÎø¨
+>
+java:S1123·"'Add the missing @Deprecated annotation.(ÀÑÖú
+N
+java:S1135î"2Complete the task associated to this TODO comment.(©·ˆúûÿÿÿÿ
+~
+java:S1488˜"bImmediately return this expression instead of assigning it to the temporary variable "playername".(ï£ïüÿÿÿÿ
+I
+java:S1135£"2Complete the task associated to this TODO comment.(Æİîÿ
+B
+java:S1075Î"&Remove this hard-coded path-delimiter.(š¡ğÌùÿÿÿÿ
+N
+java:S2589â	"7Remove this expression which always evaluates to "true"(¿‡ùÚ
+o
+java:S2293¶"YReplace the type specification in this constructor call with the diamond operator ("<>").(½“şz
+Z
+java:S2583¼"CChange this condition so that it does not always evaluate to "true"(äÏ²—
+r
+java:S1192Œ"VDefine a constant instead of duplicating this literal "nl/toefel/game/games/" 4 times.(œ†”»ÿÿÿÿÿ
+\
+java:S1155‹
+">Use isEmpty() to check whether the collection is empty or not.(°Ò‘À8ßöÆ·À.
+K
+java:S1905ô".Remove this unnecessary cast to "IRoomObject".(¥¹ƒ8½‡­·À.
+I
+java:S1135‰"2Complete the task associated to this TODO comment.(‘°¡Ñ
+N
+java:S1135ø"2Complete the task associated to this TODO comment.(÷¡ñùùÿÿÿÿ
+W	java:S125¾"<This block of commented-out lines of code should be removed.(üşÛûÿÿÿÿÿ
+T	java:S106Â"9Replace this use of System.out or System.err by a logger.(ò“¿ìüÿÿÿÿ
+L
+java:S1133·"5Do not forget to remove this deprecated code someday.(ÀÑÖú
+\
+java:S1155ª">Use isEmpty() to check whether the collection is empty or not.(ë«¤Ş8ßöÆ·À.
+O	java:S106Õ"9Replace this use of System.out or System.err by a logger.(€ÏôÈ
+d	java:S100º"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ú¯Â½
+P
+java:S2130¡"9Use "Integer.parseInt" for this string-to-int conversion.(èò¿‰
+T	java:S106È"9Replace this use of System.out or System.err by a logger.(Ç†Åøÿÿÿÿ
+i
+java:S3776®"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(òÂË
+W	java:S125¬"<This block of commented-out lines of code should be removed.(Ëéê§ùÿÿÿÿ
+U
+java:S4973í"9Use the "equals" method if value comparison was intended.(±ƒäÇúÿÿÿÿ
+T	java:S106ä"9Replace this use of System.out or System.err by a logger.(·èûßøÿÿÿÿ
+O
+java:S2755¾"3Disable access to external entities in XML parsing.(úÌßÈşÿÿÿÿ
+
+java:S1149Å"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ãóÆˆûÿÿÿÿ
+u
+java:S2293³"YReplace the type specification in this constructor call with the diamond operator ("<>").(öˆ¼Éùÿÿÿÿ
+\	java:S112ˆ"FDefine and throw a dedicated exception instead of using a generic one.(üáõë
+O	java:S106À"9Replace this use of System.out or System.err by a logger.(¶·îÔ
+„
+java:S1319È
+"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(·€Öø
+u
+java:S2293°"YReplace the type specification in this constructor call with the diamond operator ("<>").(ßŠ¨Ãşÿÿÿÿ
+O	java:S106Ù"9Replace this use of System.out or System.err by a logger.(£Ï
+Q
+java:S1117Ú":Rename "rooms" which hides the field declared at line 154.(±ÌÚÆ
+
+java:S1149°"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ßŠ¨Ãşÿÿÿÿ
+Y
+java:S1117–	"CRename "complexDisplay" which hides the field declared at line 212.(˜¾Â
+W	java:S125û"<This block of commented-out lines of code should be removed.(ø©•Ğúÿÿÿÿ
+N
+java:S1135†"2Complete the task associated to this TODO comment.(…ºÖ›şÿÿÿÿ
+W	java:S125€"<This block of commented-out lines of code should be removed.(¸³Ûÿÿÿÿÿ
+[	java:S112‡"FDefine and throw a dedicated exception instead of using a generic one.(ÌÓÆ
+
+O	java:S106¥"9Replace this use of System.out or System.err by a logger.(ÔšÑ
+u
+java:S2293ã"YReplace the type specification in this constructor call with the diamond operator ("<>").(åôÖÌùÿÿÿÿ
+R	java:S125ë"<This block of commented-out lines of code should be removed.(°é»ö
+W	java:S125Ó"<This block of commented-out lines of code should be removed.(ÕåÄ„úÿÿÿÿ
+]
+java:S2259™"FA "NullPointerException" could be thrown; "settings" is nullable here.(¨®“·
+T	java:S106×"9Replace this use of System.out or System.err by a logger.(³»³úÿÿÿÿ
+M
+java:S2696™
+"6Make the enclosing method "static" or remove this set.(¼®‚®
+[	java:S112æ"FDefine and throw a dedicated exception instead of using a generic one.(Éí;
+O	java:S106Ø"9Replace this use of System.out or System.err by a logger.(‚ïò³
+T
+java:S1117½"=Rename "language" which hides the field declared at line 206.(™Ä»“
+M
+java:S1874È"1Remove this use of "AudioClip"; it is deprecated.(§¸µ¬şÿÿÿÿ
+P
+java:S4973û"9Use the "equals" method if value comparison was intended.(ôñİ
+N
+java:S1135ó	"2Complete the task associated to this TODO comment.(Œ®¬ÿÿÿÿÿ
+W	java:S125‰"<This block of commented-out lines of code should be removed.(å–Öşÿÿÿÿ
+W	java:S125‘"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+n
+java:S3776È"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(ó¿·²ùÿÿÿÿ
+T	java:S106Ü"9Replace this use of System.out or System.err by a logger.(§œ´üÿÿÿÿÿ
+N
+java:S1135¤	"2Complete the task associated to this TODO comment.(İ¡‰Úøÿÿÿÿ
+N
+java:S1135Ê"2Complete the task associated to this TODO comment.(ã…ìÓüÿÿÿÿ
+{
+java:S1149¶"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(½“şz
+a	java:S112ò"FDefine and throw a dedicated exception instead of using a generic one.(¦„Œçüÿÿÿÿ
+D
+java:S1199Ó"-Extract this nested code block into a method.(ï¡ïó
+U
+java:S4973"9Use the "equals" method if value comparison was intended.(šƒæİüÿÿÿÿ
+R	java:S125Ó"<This block of commented-out lines of code should be removed.(Ô‘ ¾
+U
+java:S4973„"9Use the "equals" method if value comparison was intended.(ø³‚Ÿıÿÿÿÿ
+O	java:S106Ú"9Replace this use of System.out or System.err by a logger.(©½¦å
+T	java:S106¹"9Replace this use of System.out or System.err by a logger.(•÷ß¶ıÿÿÿÿ
+a	java:S112”"FDefine and throw a dedicated exception instead of using a generic one.(ì¤¬ôûÿÿÿÿ
+]
+java:S2147ì"FCombine this catch with the one at line 1130, which has the same body.(ï­£Ä
+d
+java:S2095â"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(ğÎŠşÿÿÿÿ
+W	java:S125
+"<This block of commented-out lines of code should be removed.(ªì©Ãÿÿÿÿÿ
+H
+java:S1135ú"2Complete the task associated to this TODO comment.(È«=
+]	java:S899ß"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ
+T	java:S106Î"9Replace this use of System.out or System.err by a logger.(æşÂ¯üÿÿÿÿ
+b
+java:S2147î"FCombine this catch with the one at line 1130, which has the same body.(ë¶”³ıÿÿÿÿ
+R	java:S125ñ"<This block of commented-out lines of code should be removed.(…™á‚
+b
+java:S2147ğ"FCombine this catch with the one at line 1130, which has the same body.(¯ş¼ ùÿÿÿÿ
+_
+java:S2259ï"CA "NullPointerException" could be thrown; "music" is nullable here.(ıîã›ùÿÿÿÿ
+p
+java:S2293©"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÔıÓˆ
+U
+java:S4973ş"9Use the "equals" method if value comparison was intended.(Óğôşÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(¸³Ûÿÿÿÿÿ
+u
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ô¢¬ßıÿÿÿÿ
+I
+java:S1135«"2Complete the task associated to this TODO comment.(Ğ¹ªë

@@ -1,0 +1,118 @@
+
+‡
+java:S1319¡"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(‹Ó²ó
+Œ
+java:S1319õ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(â»Äüúÿÿÿÿ
+Œ
+java:S1319‹"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(‰›Æ¥ùÿÿÿÿ
+Œ
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ºˆÀºùÿÿÿÿ
+‡
+java:S1319÷"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".( É“ö
+E
+java:S1066´"/Merge this if statement with the enclosing one.(”†”A
+F
+java:S1066–"/Merge this if statement with the enclosing one.(‚©™Î
+t	java:S135ƒ"YReduce the total number of break and continue statements in this loop to use at most one.(âô¡™ûÿÿÿÿ
+Z
+java:S1155õ">Use isEmpty() to check whether the collection is empty or not.(›šÅ›şÿÿÿÿ
+U
+java:S1155“">Use isEmpty() to check whether the collection is empty or not.(Ğë²Ó
+U
+java:S1155„">Use isEmpty() to check whether the collection is empty or not.(ñ‘Å‹
+?
+java:S1604Ô"(Make this anonymous inner class a lambda(Ø­¡
+U
+java:S4973"9Use the "equals" method if value comparison was intended.(ô™Ìşÿÿÿÿÿ
+U
+java:S4973Æ"9Use the "equals" method if value comparison was intended.(‰ß¢åüÿÿÿÿ
+z
+java:S1488‹"^Immediately return this expression instead of assigning it to the temporary variable "result".(ÃÛõæüÿÿÿÿ
+H
+java:S1135"2Complete the task associated to this TODO comment.(ıÎƒ
+t
+java:S22930"YReplace the type specification in this constructor call with the diamond operator ("<>").(â·ºÃıÿÿÿÿ
+t
+java:S22933"YReplace the type specification in this constructor call with the diamond operator ("<>").(åííìûÿÿÿÿ
+t
+java:S22936"YReplace the type specification in this constructor call with the diamond operator ("<>").(°³ßÈüÿÿÿÿ
+t
+java:S22939"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿæØşÿÿÿÿ
+t
+java:S2293H"YReplace the type specification in this constructor call with the diamond operator ("<>").(¿’µÉøÿÿÿÿ
+M
+java:S1135c"2Complete the task associated to this TODO comment.(¼ÀÅ“øÿÿÿÿ
+G
+java:S1135d"2Complete the task associated to this TODO comment.(È«=
+H
+java:S1135k"2Complete the task associated to this TODO comment.(¢Òşö
+K
+java:S1905†"/Remove this unnecessary cast to "NamedNodeMap".(öùâÿÿÿÿÿ
+n
+java:S3776©"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(ßœåæÿÿÿÿÿ
+O	java:S106»"9Replace this use of System.out or System.err by a logger.(ÔË©ƒ
+O	java:S106Å"9Replace this use of System.out or System.err by a logger.(ïÏÔ
+O	java:S106Ï"9Replace this use of System.out or System.err by a logger.(›ê…û
+i
+java:S3981Ş"SThe length of "files" is always ">=0", so update this test to either "==0" or ">0".(»çÎ?
+T	java:S106ß"9Replace this use of System.out or System.err by a logger.(Ùõ¦Èÿÿÿÿÿ
+T	java:S106ö"9Replace this use of System.out or System.err by a logger.(Ùõ¦Èÿÿÿÿÿ
+T	java:S106§"9Replace this use of System.out or System.err by a logger.(µ—õéüÿÿÿÿ
+N
+java:S1135­"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+O	java:S106Ğ"9Replace this use of System.out or System.err by a logger.(Ç®Ô÷
+Y
+java:S1117İ"=Rename "collision" which hides the field declared at line 60.(››Ì¡úÿÿÿÿ
+N
+java:S1135ç"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+Y
+java:S1117ó"=Rename "collision" which hides the field declared at line 60.(ÊÉâÇûÿÿÿÿ
+H
+java:S1135°"2Complete the task associated to this TODO comment.(§¶§
+D
+java:S1125Ä"(Remove the literal "true" boolean value.(²åÜåúÿÿÿÿ
+\
+java:S1117Ì"@Rename "commandRange" which hides the field declared at line 63.(»éÒùÿÿÿÿ
+]
+java:S1126á"AReplace this if-then-else statement by a single return statement.(ıçôûÿÿÿÿ
+E
+java:S1125á")Remove the literal "false" boolean value.(ıçôûÿÿÿÿ
+L
+java:S1133›"5Do not forget to remove this deprecated code someday.(ŒÛ¹
+>
+java:S1123›"'Add the missing @Deprecated annotation.(ŒÛ¹
+N
+java:S1135˜"2Complete the task associated to this TODO comment.(ó°åØşÿÿÿÿ
+i
+java:S3776÷"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.( É“ö
+u
+java:S2293ø"YReplace the type specification in this constructor call with the diamond operator ("<>").(ßËØ×şÿÿÿÿ
+B
+java:S1168™"+Return an empty collection instead of null.(¥¹ï
+I
+java:S1135˜"2Complete the task associated to this TODO comment.(ÍŠäÍ
+I
+java:S1135²"2Complete the task associated to this TODO comment.(ÜåÀ
+N
+java:S1135Ì"2Complete the task associated to this TODO comment.(¼ÀÅ“øÿÿÿÿ
+H
+java:S1135Í"2Complete the task associated to this TODO comment.(È«=
+N
+java:S1135Ş"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ
+N
+java:S1135æ"2Complete the task associated to this TODO comment.(Èš±úÿÿÿÿ
+H
+java:S1135ç"2Complete the task associated to this TODO comment.(È«=
+D
+java:S1125Ÿ"(Remove the literal "true" boolean value.(Ú©øÿÿÿÿ
+W	java:S125Ê"<This block of commented-out lines of code should be removed.(ÊœÕ´ÿÿÿÿÿ
+W	java:S125‹"<This block of commented-out lines of code should be removed.(’üĞ“üÿÿÿÿ
+R	java:S125—"<This block of commented-out lines of code should be removed.(–Çå
+R	java:S125›"<This block of commented-out lines of code should be removed.(å·ôµ
+R	java:S125À"<This block of commented-out lines of code should be removed.(Û¨’
+R	java:S125Ä"<This block of commented-out lines of code should be removed.(å·ôµ
+R	java:S125¥"<This block of commented-out lines of code should be removed.(É›µò
+W	java:S125Â"<This block of commented-out lines of code should be removed.(ñ¢‘èûÿÿÿÿ
+W	java:S125Í"<This block of commented-out lines of code should be removed.(Œø×Ôüÿÿÿÿ
+R	java:S125í"<This block of commented-out lines of code should be removed.(Ê‚Òé
+W	java:S125§"<This block of commented-out lines of code should be removed.(İ±­¥şÿÿÿÿ

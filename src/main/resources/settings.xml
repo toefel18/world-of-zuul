@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<settings>
+	<controls>
+		<controlset id="1">
+			<command keycode="16777217" name="move-north"/>
+			<command keycode="16777218" name="move-south"/>
+			<command keycode="16777220" name="move-east"/>
+			<command keycode="16777219" name="move-west"/>
+			<command keycode="105" name="inventory"/>
+			<command keycode="13" name="use"/>
+			<command keycode="100" name="showdebug"/>
+		</controlset>
+	</controls>
+	
+	<language lang="nl"/>
+	<framerate fps="50"/>	
+	<fullscreen on="true"/>
+	
+</settings>

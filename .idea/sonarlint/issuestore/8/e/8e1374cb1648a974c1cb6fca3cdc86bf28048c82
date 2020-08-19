@@ -1,0 +1,71 @@
+
+K
+java:S1604…"(Make this anonymous inner class a lambda(µºÊŸøÿÿÿÿ8‡š·À.
+w
+java:S2293‡"YReplace the type specification in this constructor call with the diamond operator ("<>").(œœÕ¼8‡š·À.
+h
+java:S2147³"ECombine this catch with the one at line 687, which has the same body.(ÊÊÆƒüÿÿÿÿ8‡š·À.
+^	java:S125Ò"<This block of commented-out lines of code should be removed.(Ùø¹§ùÿÿÿÿ8‡š·À.
+E
+java:S1604¦"(Make this anonymous inner class a lambda(µ½8‡š·À.
+F
+java:S1604«"(Make this anonymous inner class a lambda(•ÅœÌ8‡š·À.
+X
+java:S1874¦"5Remove this use of "XMLSerializer"; it is deprecated.(ª‡±Ÿüÿÿÿÿ8‡š·À.
+[	java:S106Å"9Replace this use of System.out or System.err by a logger.(£Éšòÿÿÿÿÿ8‡š·À.
+
+java:S1488¶"^Immediately return this expression instead of assigning it to the temporary variable "result".(ÃÛõæüÿÿÿÿ8‡š·À.
+N
+java:S1905¿"+Remove this unnecessary cast to "NodeList".(æ§Ìœùÿÿÿÿ8‡š·À.
+^	java:S125"<This block of commented-out lines of code should be removed.(õ€ùŠüÿÿÿÿ8‡š·À.
+M
+java:S1066Ì"/Merge this if statement with the enclosing one.(¥Ë¹½8‡š·À.
+R
+java:S1191"5Use classes from the Java API instead of Sun classes.(æ¿”8¯µæ·À.
+F
+java:S1604³"(Make this anonymous inner class a lambda(ÚÒ¾œ8‡š·À.
+F
+java:S1604ß"(Make this anonymous inner class a lambda(Ÿ™Ùÿ8‡š·À.
+F
+java:S1604Ç"(Make this anonymous inner class a lambda(Ø­¡8‡š·À.
+E
+java:S1604ì"(Make this anonymous inner class a lambda(µŠ‡[8‡š·À.
+E
+java:S1604Ù"(Make this anonymous inner class a lambda(ÛÖß^8‡š·À.
+o
+java:S3776|"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(­§é†8‡š·À.
+u
+java:S3776à"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(æ½Ş„úÿÿÿÿ8‡š·À.
+]	java:S125~"<This block of commented-out lines of code should be removed.(÷ôù¯ıÿÿÿÿ8‡š·À.
+K
+java:S1604½"(Make this anonymous inner class a lambda(ø±óôøÿÿÿÿ8‡š·À.
+X
+java:S1874¦"5Remove this use of "XMLSerializer"; it is deprecated.(ª‡±Ÿüÿÿÿÿ8‡š·À.
+X	java:S1255"<This block of commented-out lines of code should be removed.(‹Èİø8‡š·À.
+F
+java:S1604ú"(Make this anonymous inner class a lambda(ö‹é·8‡š·À.
+o
+java:S3776Ô"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(­†û:8‡š·À.
+X	java:S125."<This block of commented-out lines of code should be removed.(±òå§8‡š·À.
+X	java:S125g"<This block of commented-out lines of code should be removed.(ïéÕ”8‡š·À.
+E
+java:S1604Î"(Make this anonymous inner class a lambda(ËŞé$8‡š·À.
+M
+java:S1066å"/Merge this if statement with the enclosing one.(¦©·Ï8‡š·À.
+Q
+java:S2755ª"3Disable access to external entities in XML parsing.(–¬›Û8‡š·À.
+M
+java:S1066ù"/Merge this if statement with the enclosing one.(ú¦˜Å8‡š·À.
+F
+java:S1604à"(Make this anonymous inner class a lambda(Ø­¡8‡š·À.
+Z
+java:S1117©"<Rename "settings" which hides the field declared at line 69.(¯İÅ¸8Àí·À.
+P
+java:S1135ğ"2Complete the task associated to this TODO comment.(Ö©í€8‡š·À.
+M
+java:S1066Å"/Merge this if statement with the enclosing one.(Şú”ä8‡š·À.
+c
+java:S2147±"ECombine this catch with the one at line 687, which has the same body.(ï­£Ä8‡š·À.
+D
+java:S1168Ä"&Return an empty array instead of null.(¥¹ï8‡š·À.
+^	java:S125é"<This block of commented-out lines of code should be removed.(˜–±Úşÿÿÿÿ8‡š·À.

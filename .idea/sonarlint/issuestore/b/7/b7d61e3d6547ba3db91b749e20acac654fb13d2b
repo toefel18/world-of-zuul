@@ -1,0 +1,6 @@
+
+S	java:S106T"9Replace this use of System.out or System.err by a logger.(¹¾€íúÿÿÿÿ
+N	java:S106D"9Replace this use of System.out or System.err by a logger.(Á·¨š
+N	java:S106?"9Replace this use of System.out or System.err by a logger.(¦‚¸¤
+z
+java:S1488X"_Immediately return this expression instead of assigning it to the temporary variable "command".(žñ÷ùÿÿÿÿÿ

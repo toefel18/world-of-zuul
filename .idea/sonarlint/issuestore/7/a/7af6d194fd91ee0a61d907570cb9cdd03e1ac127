@@ -1,0 +1,10 @@
+
+A
+java:S1172g"&Remove these unused method parameters.(Š¼ýÚüÿÿÿÿ
+S	java:S106W"9Replace this use of System.out or System.err by a logger.(ù‹¾¾þÿÿÿÿ
+N	java:S106i"9Replace this use of System.out or System.err by a logger.(¥æ°“
+T
+java:S3516g"9Refactor this method to not always return the same value.(Š¼ýÚüÿÿÿÿ
+H
+java:S1135n"2Complete the task associated to this TODO comment.(Ìã½Ò
+Q	java:S125o"<This block of commented-out lines of code should be removed.(ÙÁ§¨

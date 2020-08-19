@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game version="1.1">
+	<rooms>
+		<room id="102" texture="grass2.bmp" />
+		<room id="103" texture="sand.bmp" />
+	</rooms>
+	<roomobjects>
+		<player id="1" room="103" x="200" y="100" texture="player.bmp">
+			<useablecommands>
+				<command>open</command>
+				<command>talk</command>
+			</useablecommands>
+		</player>
+	</roomobjects>
+	<!-- Needs to be discussed and revised -->
+	<events>
+		<event id="1">
+			<timesexecuted>0</timesexecuted>
+			<timesexecutable>0</timesexecutable>
+			
+			<conditions>
+				<initiator>23</initiator>
+				<interactor>52</interactor>
+				<event id="2">
+					<fired>1</fired>
+				</event>
+				<event id="3">
+					<fired>0</fired>
+				</event>
+			</conditions>
+			
+			<commands>
+				<command>
+					<name>talk</name>
+					<initiator>
+						<id>65</id>
+						<tekstline>1</tekstline>
+					</initiator>
+					<interactor>52</interactor>
+				</command>
+				
+				<command>
+					<name>attachwalkpath</name>
+					<initiator>
+						<id>65</id>
+						<tekstline>1</tekstline>
+					</initiator>
+					<interactor>52</interactor>
+				</command>
+			</commands>
+		</event>
+	</events>
+	<!-- end -->
+	<texts>
+		<text id="1" emotion="hoerig">
+			<line lang="nl">Hallo %PLAYERNAME%</line>
+			<line lang="en">Hello</line>
+		</text>
+	</texts>
+</game>
