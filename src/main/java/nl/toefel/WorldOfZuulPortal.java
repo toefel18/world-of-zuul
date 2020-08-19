@@ -4,8 +4,6 @@ import com.sun.org.apache.xml.internal.serialize.XMLSerializer;
 import java.io.File;
 import java.io.FilenameFilter;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.regex.Matcher;
@@ -46,9 +44,8 @@ public class WorldOfZuulPortal {
 //	private static final Point DEFAULT_GAME_WINDOW_SIZE = new Point(800, 600);
 	private static final Point DEFAULT_PORTAL_WINDOW_SIZE = new Point(425, 300);
 	private static final Point DEFAULT_CONFIGURE_CONTROL_WINDOW_SIZE = new Point(280, 350);
-	private static final String BASE_PATH = "nl/toefel/game";
 	private static final String PLAYER_NAME_ASK = "<enter player name>";
-	private static final String LOGO_PATH = "nl/toefel/game/logo.png";
+	private static final String LOGO_PATH = "logo.png";
 	private static final String ABOUT_TEXT = "World of zuul \n\n Role playing game\n\nAuthors:\nC. Hesters\nJ. Krist\n\n(C)2008";
 //	private static final String ABOUT_WEBLINK = "<A HREF=\"http://trac.woz.toefel.nl\">Visit the trac environment</A>";
 	
@@ -107,6 +104,7 @@ public class WorldOfZuulPortal {
 	private Node fullscreenNode = null;
 	private Node language = null;
 	private Image logo = null;
+
 	/**
 	 * Main entrypoint of the program
 	 * @param args
@@ -119,7 +117,7 @@ public class WorldOfZuulPortal {
 	 * and fills them with appropriate data. Provide
 	 * functionality like creating a new game, loading
 	 * saved games and configure settings like language
-	 * and user controls 
+	 * and user controls
 	 */
 	public WorldOfZuulPortal(){
 		//decorate the shell
@@ -322,16 +320,14 @@ public class WorldOfZuulPortal {
 		shell.pack();
 		shell.open();
 		
-				 
-		
 		//message loop
 		while( !shell.isDisposed() ) {
-			if( !display.readAndDispatch() ) 
+			if( !display.readAndDispatch() )
 				display.sleep();
 		}
 		
 		Game.getInstance().unload();
-		
+
 		display.dispose();
 	}
 	
@@ -447,7 +443,7 @@ public class WorldOfZuulPortal {
 	 * @return File[] array
 	 */
 	public File[] getSavegames(String worldName){
-		File root = new File( BASE_PATH + "/games/" + worldName + "/savegames");
+		File root = new File( Game.gameDataDir() + "/games/" + worldName + "/savegames");
 		if( !root.exists() )
 			return null;
 		
@@ -472,7 +468,7 @@ public class WorldOfZuulPortal {
 		
 		addAvailableLanguages();
 		
-		File gameroot = new File( BASE_PATH + "/games" );
+		File gameroot = new File( Game.gameDataDir() + "/games" );
 	    if( !gameroot.exists() )
 	    	return;
 	    
@@ -623,7 +619,7 @@ public class WorldOfZuulPortal {
 				if(re.find()){
 					//TODO constructing filenames this way can be error prone
 					//construct filename, and check if it exists
-					File filename = new File( BASE_PATH + 
+					File filename = new File( Game.gameDataDir() +
 									"/games/" + 
 									availableGames.getText() + 
 									"/savegames/" + 
@@ -657,13 +653,13 @@ public class WorldOfZuulPortal {
 	 */
 	public void loadGameImage(String gameName){
 		//update to match more image types!
-		String path = "nl/toefel/game/games/" + gameName + "/logo.png";
+		String path = Game.gameDataDir() + "/games/" + gameName + "/logo.png";
 		
 		if(new File(path).exists()){
 			logo = new Image(display, path);
 		    label.setImage(logo);
 		}else{
-			if(new File(LOGO_PATH).exists()){
+			if(new File(Game.gameDataDir() + "/" + LOGO_PATH).exists()){
 				logo = new Image(display, LOGO_PATH);
 				label.setImage(logo);
 			}else{
@@ -672,14 +668,14 @@ public class WorldOfZuulPortal {
 			}
 		}
 	}
-	
+
 	/**
 	 * loads the settings XML document
 	 */
 	public void loadSettings(){
 		try {
-			InputStream settings = getClass().getResourceAsStream(Game.SETTINGS_FILE);
-			settingsDocument = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(settings);
+			String settingsLocation = Game.gameDataDir() + "/" + Game.SETTINGS_FILE;
+			settingsDocument = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(settingsLocation);
 			loadFramerate();
 			loadFullscreen();
 			loadLanguage();

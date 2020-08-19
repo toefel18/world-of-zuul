@@ -9,11 +9,13 @@ java {
 }
 
 repositories {
+    mavenCentral()
     jcenter()
 }
 
 dependencies {
-    implementation 'org.eclipse.swt:org.eclipse.swt.gtk.linux.x86_64:4.3'
+    implementation files('lib/swt.jar')
+//    implementation 'org.eclipse.swt:org.eclipse.swt.gtk.linux.x86_64:4.3'
     // Use JUnit test framework
     testImplementation 'junit:junit:4.13'
 }

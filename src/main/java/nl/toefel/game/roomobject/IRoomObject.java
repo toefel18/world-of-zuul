@@ -200,7 +200,7 @@ public abstract class IRoomObject {
 				
 				Game game = Game.getInstance();
 				//animatedImagesPath = "game/games/" + game.getWorldName() + "/images/" + animatedImagesPath;
-				File imagesPath = new File( "nl/toefel/game/games/" + game.getWorldName() + "/images/" + animatedImagesPath );
+				File imagesPath = new File( Game.gameDataDir() + "/games/" + game.getWorldName() + "/images/" + animatedImagesPath );
 				
 				if( !imagesPath.exists() )
 				{

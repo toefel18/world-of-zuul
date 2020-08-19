@@ -65,7 +65,9 @@ public class Game {
 	
 	/** Regex for extracting information out of the filename of a savegame*/
 	public static final String SAVE_GAME_NAME = "^(" + PLAYER_NAME + ")_([0-9][0-9])u([0-9][0-9])m_([0-9][0-9])d([0-9][0-9])m([0-9][0-9][0-9][0-9])y" + SAVE_GAME_EXTENSION + "$";
-	
+
+	public static final String PROJECT_DIR = "./src/main/resources";
+
 	/** File that contains the configuration */
 	public static final String SETTINGS_FILE = "settings.xml";
 	
@@ -393,7 +395,7 @@ public class Game {
 	 */
 	public void createNewGame(String worldName, String playerName, String language) throws Exception
 	{
-		loadGame("nl/toefel/game/games/" + worldName + "/game.xml");
+		loadGame(Game.gameDataDir() + "/games/" + worldName + "/game.xml");
 		setLanguage(language);
 		
 		NamedNodeMap gameAttributes = gameState.getFirstChild().getAttributes();
@@ -537,7 +539,9 @@ public class Game {
 		return playername;
 	}
 
-
+	public static String gameDataDir() {
+		return System.getProperty("gameDataDir", Game.PROJECT_DIR);
+	}
 	
 	/**
 	 * Returns the requested Room.
@@ -587,12 +591,12 @@ public class Game {
 	 */
 	protected String getSoundPath(String soundFile, int soundType){
 		String type = soundType == MUSIC ? "music" : "effects";
-		String path = "nl/toefel/game/games/" + getWorldName() + "/sounds/" + type + "/" + soundFile;
+		String path = gameDataDir() + "/games/" + getWorldName() + "/sounds/" + type + "/" + soundFile;
 		
 		File imageFile = new File(path);
 		    
 		if(!imageFile.exists()){
-			path = "nl/toefel/game/sounds/" + type + "/" + soundFile;
+			path = gameDataDir() + "/sounds/" + type + "/" + soundFile;
 			imageFile = new File(path);
 				
 			if(!imageFile.exists()){
@@ -714,7 +718,7 @@ public class Game {
 		//TODO implement check to validate the XML that will be loaded contains valid basic elements and attributes
 
 		// Load the settings.xml file
-		settings = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(SETTINGS_FILE);
+		settings = DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(gameDataDir() + "/" + SETTINGS_FILE);
 		
 		// Load the savegame.
 		gameState = gameXML;
@@ -1021,11 +1025,11 @@ public class Game {
 				return;
 			
 			// Determine file path.
-			File imageFile = new File("nl/toefel/game/games/" + getWorldName() + "/images/" + imagefile);
+			File imageFile = new File(gameDataDir() + "/games/" + getWorldName() + "/images/" + imagefile);
 		    
 			if(!imageFile.exists())
 			{
-				imageFile = new File("nl/toefel/game/images/" + imagefile);
+				imageFile = new File(gameDataDir() + "/images/" + imagefile);
 				
 				if(!imageFile.exists())
 					throw new Exception("Image '" + imagefile + "' not found.");
@@ -1088,7 +1092,7 @@ public class Game {
 		String year = "" + cal.get(Calendar.YEAR);
 		year = hour.length() == 1 ? "0" + year : year;
 		
-		String filename = "nl/toefel/game/games/" + getWorldName() + "/savegames/";
+		String filename = gameDataDir() + "/games/" + getWorldName() + "/savegames/";
 		filename += getPlayerName() + "_" + 
 					hour + "u" +
 					minute + "m" + "_" +

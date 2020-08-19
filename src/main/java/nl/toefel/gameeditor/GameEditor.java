@@ -278,7 +278,7 @@ public class GameEditor
 	{
 		try
 		{
-			String filepath = "nl/toefel/game/games/pokemon/game.xml";
+			String filepath = Game.gameDataDir() + "/game/games/pokemon/game.xml";
 			
 			// Select the root node of the current gamestate.
 			XPath xPath =  XPathFactory.newInstance().newXPath();
